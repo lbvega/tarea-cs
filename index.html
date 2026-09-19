@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hoja de vida y portafolio de Leidy Vega, estudiante de Desarrollo Web. Habilidades, logros y datos de contacto.">
+    <title>Leidy Vega | Hoja de Vida y Portafolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <a href="#main">Saltar al contenido principal</a>
+
+    <header>
+        <img src="perfil.svg" alt="Foto de perfil de Leidy Vega" width="180" height="180">
+        <div>
+            <h1>Leidy Vega</h1>
+            <p class="titulo-profesional">Estudiante de Desarrollo Web</p>
+            <p>Portafolio profesional con enfoque en HTML semántico, CSS accesible y buenas prácticas W3C.</p>
+        </div>
+    </header>
+
+    <nav aria-label="Navegación principal">
+        <a href="#sobre-mi">Sobre mí</a>
+        <a href="#habilidades">Habilidades</a>
+        <a href="#logros">Logros</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+
+    <main id="main" tabindex="-1">
+        <section id="sobre-mi" aria-labelledby="titulo-sobre-mi">
+            <h2 id="titulo-sobre-mi">Sobre mí</h2>
+            <p>
+                Soy estudiante de Desarrollo Web y me especializo en construir páginas claras,
+                organizadas y fáciles de usar. Me interesa el código limpio, el diseño con alto
+                contraste y el cumplimiento de criterios de accesibilidad para que cualquier
+                persona pueda navegar sin barreras.
+            </p>
+            <details>
+                <summary>Más información profesional</summary>
+                <p>
+                    Estudio estructura HTML5, CSS (Flexbox, Grid y modelo de caja) y principios
+                    de accesibilidad web. Busco crear interfaces comprensibles, con encabezados
+                    ordenados, textos alternativos y formularios correctamente etiquetados.
+                </p>
+                <p>
+                    Mi objetivo es seguir fortaleciendo frontend accesible y aplicar estas
+                    prácticas en proyectos académicos y profesionales.
+                </p>
+            </details>
+            <details>
+                <summary>Intereses y enfoque de aprendizaje</summary>
+                <p>
+                    Me gusta combinar diseño visual sobrio con semántica correcta: landmarks,
+                    enlaces descriptivos y componentes nativos como <code>progress</code>,
+                    <code>details</code> y <code>summary</code>.
+                </p>
+            </details>
+        </section>
+
+        <section id="habilidades" aria-labelledby="titulo-habilidades">
+            <h2 id="titulo-habilidades">Habilidades</h2>
+            <div class="grid">
+                <article>
+                    <h3>HTML5 semántico</h3>
+                    <p>Estructura con <code>header</code>, <code>nav</code>, <code>main</code>, <code>section</code> y <code>footer</code> para una lectura clara por personas y tecnologías de asistencia.</p>
+                </article>
+                <article>
+                    <h3>CSS y diseño visual</h3>
+                    <p>Uso de Flexbox, CSS Grid, modelo de caja y paletas de alto contraste para una presentación profesional y legible.</p>
+                </article>
+                <article>
+                    <h3>Accesibilidad web</h3>
+                    <p>Enlace de salto, textos alternativos, etiquetas en formularios, foco visible y contraste suficiente según criterios W3C.</p>
+                </article>
+                <article>
+                    <h3>Organización de proyectos</h3>
+                    <p>Separación de contenido y estilo, nombres claros de archivos y páginas listas para validación HTML y revisión WAVE.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="logros" aria-labelledby="titulo-logros">
+            <h2 id="titulo-logros">Logros</h2>
+            <p>Avance actual en las competencias del portafolio:</p>
+
+            <div class="logro">
+                <label for="progreso-html">HTML5 y estructura semántica</label>
+                <progress id="progreso-html" value="95" max="100">95%</progress>
+                <span>95%</span>
+            </div>
+
+            <div class="logro">
+                <label for="progreso-css">CSS: Flexbox, Grid y modelo de caja</label>
+                <progress id="progreso-css" value="85" max="100">85%</progress>
+                <span>85%</span>
+            </div>
+
+            <div class="logro">
+                <label for="progreso-accesibilidad">Accesibilidad W3C / WAVE</label>
+                <progress id="progreso-accesibilidad" value="90" max="100">90%</progress>
+                <span>90%</span>
+            </div>
+
+            <div class="logro">
+                <label for="progreso-proyecto">Proyecto de hoja de vida</label>
+                <progress id="progreso-proyecto" value="100" max="100">100%</progress>
+                <span>100%</span>
+            </div>
+        </section>
+
+        <section id="contacto" aria-labelledby="titulo-contacto">
+            <h2 id="titulo-contacto">Contacto</h2>
+            <p>Puedes escribirme mediante el siguiente formulario. Los campos marcados con * son obligatorios.</p>
+
+            <form action="#contacto" method="get">
+                <div class="campo">
+                    <label for="nombre">Nombre completo *</label>
+                    <input type="text" id="nombre" name="nombre" autocomplete="name" required>
+                </div>
+
+                <div class="campo">
+                    <label for="correo">Correo electrónico *</label>
+                    <input type="email" id="correo" name="correo" autocomplete="email" required>
+                </div>
+
+                <div class="campo">
+                    <label for="mensaje">Mensaje *</label>
+                    <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+                </div>
+
+                <button type="submit">Enviar mensaje</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="pie-contenido">
+            <section aria-labelledby="titulo-pie-info">
+                <h2 id="titulo-pie-info">Leidy Vega</h2>
+                <p>Estudiante de Desarrollo Web</p>
+                <p>Hoja de vida y portafolio académico</p>
+            </section>
+
+            <section aria-labelledby="titulo-pie-contacto">
+                <h2 id="titulo-pie-contacto">Información de contacto</h2>
+                <address>
+                    <p>
+                        Correo:
+                        <a href="mailto:leidy.vega@example.com">leidy.vega@example.com</a>
+                    </p>
+                    <p>Colombia</p>
+                </address>
+            </section>
+
+            <section aria-labelledby="titulo-pie-enlaces">
+                <h2 id="titulo-pie-enlaces">Enlaces</h2>
+                <ul>
+                    <li><a href="#sobre-mi">Sobre mí</a></li>
+                    <li><a href="#habilidades">Habilidades</a></li>
+                    <li><a href="#logros">Logros</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </section>
+        </div>
+        <p class="copyright">© 2026 Leidy Vega. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
